@@ -1,4 +1,8 @@
-var argButtonName, button_paper, button_rock, button_scissors, buttonTest;
+let argButtonName,
+button_paper,
+button_rock,
+button_scissors,
+buttonTest;
 
 
 button_rock = document.getElementById('button-rock');
@@ -8,7 +12,7 @@ button_scissors = document.getElementById('button-scissors');
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+let argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
 function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
   if (argMoveId == 1) {
@@ -39,6 +43,7 @@ function displayResult(argPlayerMove, argComputerMove) {
     printMessage('Przegrywasz :(');
   }
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+
 }
 playerMove = argButtonName;
 randomNumber = Math.floor(Math.random() * 3 + 1);
